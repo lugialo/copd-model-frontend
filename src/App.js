@@ -44,7 +44,7 @@ function App() {
     console.log('Sending data:', valuesArray);
 
     try {
-      const response = await fetch('http://localhost:5000/predict', {
+      const response = await fetch('https://copd-model-production-5213.up.railway.app/predict', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
