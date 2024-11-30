@@ -1,7 +1,102 @@
-.App {
-  text-align: center;
+/* Corpo da página */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e2f;
+  color: #e0e0e0;
+  line-height: 1.6;
 }
 
+/* Contêiner principal */
+.App {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #2a2a3b;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Cabeçalho */
+h1 {
+  text-align: center;
+  color: #f0f8ff;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* Estilos do formulário */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-weight: bold;
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+.form-input {
+  padding: 0.75rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #1c1c2b;
+  color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #f0f8ff;
+  outline: none;
+  box-shadow: 0 0 8px #f0f8ff;
+}
+
+.form-submit {
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  color: white;
+  background-color: #3cb371;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-submit:hover {
+  background-color: #3cb371;
+  transform: scale(1.02);
+}
+
+.form-submit:active {
+  background-color: #3cb371;
+}
+
+/* Resultados */
+.result {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background-color: #24243b;
+  border: 1px solid #f0f8ff;
+  border-radius: 8px;
+}
+
+.result h2 {
+  margin: 0 0 0.5rem;
+  color: #f0f8ff;
+  font-size: 1.5rem;
+}
+
+/* Estilo para animação do logo (se necessário) */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,26 +108,31 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .App {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .form-input {
+    font-size: 0.95rem;
+  }
+
+  .form-submit {
+    font-size: 1.15rem;
   }
 }
