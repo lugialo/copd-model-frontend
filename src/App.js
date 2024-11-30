@@ -3,7 +3,6 @@ import "./App.css";
 
 function App() {
   const [formData, setFormData] = useState({
-    id: "",
     age: "",
     PackHistory: "",
     MWT1Best: "",
@@ -14,7 +13,6 @@ function App() {
     CAT: "",
     SGRQ: "",
     AGEquartiles: "",
-    copd: "",
     gender: "",
     Diabetes: "",
     hipertension: "",
@@ -69,7 +67,7 @@ function App() {
         3: "Muito severo"
       };
 
-      const severity = severityMap[data.prediction] || "Desconhecido"; // Default to "Desconhecido" if value doesn't match
+      const severity = severityMap[data.prediction] || "Desconhecido";
       setResult(severity);
     } catch (error) {
       console.error("Error:", error);
