@@ -59,7 +59,18 @@ function App() {
       }
 
       const data = await response.json();
-      setResult(data);
+      console.log("API Response:", data);
+
+      // Convert prediction (numeric) into severity description
+      const severityMap = {
+        0: "Leve",
+        1: "Moderado",
+        2: "Severo",
+        3: "Muito severo"
+      };
+
+      const severity = severityMap[data.prediction] || "Desconhecido"; // Default to "Desconhecido" if value doesn't match
+      setResult(severity);
     } catch (error) {
       console.error("Error:", error);
     }
@@ -86,10 +97,12 @@ function App() {
           ENVIAR
         </button>
       </form>
-      {result !== null && (
+
+      {/* Exibindo o resultado da predição */}
+      {result && (
         <div className="result">
           <h2>Resultado da Predição:</h2>
-          <p>{result}</p>
+          <p>{`${result}`}</p>
         </div>
       )}
     </div>

@@ -1,4 +1,10 @@
-/* Corpo da página */
+/* Resetando margens e padding para garantir consistência */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -7,7 +13,6 @@ body {
   line-height: 1.6;
 }
 
-/* Contêiner principal */
 .App {
   max-width: 600px;
   margin: 2rem auto;
@@ -17,7 +22,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Cabeçalho */
 h1 {
   text-align: center;
   color: #f0f8ff;
@@ -26,7 +30,6 @@ h1 {
   text-transform: uppercase;
 }
 
-/* Estilos do formulário */
 .form-container {
   display: flex;
   flex-direction: column;
@@ -78,7 +81,7 @@ label {
 }
 
 .form-submit:active {
-  background-color: #3cb371;
+  background-color: #d84315;
 }
 
 /* Resultados */
@@ -96,7 +99,13 @@ label {
   font-size: 1.5rem;
 }
 
-/* Estilo para animação do logo (se necessário) */
+.result p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Logo */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -117,7 +126,7 @@ label {
   }
 }
 
-/* Responsividade */
+/* Responsividade para dispositivos menores */
 @media (max-width: 768px) {
   .App {
     padding: 1.5rem;
