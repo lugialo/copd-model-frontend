@@ -22,7 +22,7 @@ function App() {
 
   const tooltips = {
     Idade: "Insira sua idade em anos.",
-    "Histórico tabágico": "Informe se você tem histórico de tabagismo.",
+    "Histórico tabágico": "Informe o valor do histórico de tabagismo.",
     "Distância caminhada em 6 minutos (em metros)": "Informe a distância que você consegue caminhar em 6 minutos.",
     VEF: "Insira o valor do VEF.",
     "VEF1 previsto": "Insira o valor previsto do VEF1.",
