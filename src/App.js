@@ -31,7 +31,7 @@ function App() {
     "Teste de Avaliação da DPOC": "Insira o resultado do teste de avaliação da DPOC.",
     "Indíce de qualidade de vida": "Insira o índice de qualidade de vida.",
     "Quartis de Idade": "Informe o quartil de idade.",
-    "Genêro": "Informe seu gênero.",
+    "Gênero": "Informe seu gênero.",
     "Teve/tem diabetes?": "Informe se você tem ou teve diabetes.",
     "Teve/tem hipertensão?": "Informe se você tem ou teve hipertensão.",
     "Teve/tem atrilação fibrial?": "Informe se você tem ou teve arritmia fibrial.",
