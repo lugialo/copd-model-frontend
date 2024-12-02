@@ -13,7 +13,7 @@ function App() {
     "Teste de Avaliação da DPOC": "",
     "Indíce de qualidade de vida": "",
     "Quartis de Idade": "",
-    "Genêro": "",
+    "Gênero": "",
     "Teve/tem diabetes?": "",
     "Teve/tem hipertensão?": "",
     "Teve/tem atrilação fibrial?": "",
@@ -63,7 +63,7 @@ function App() {
       "Teste de Avaliação da DPOC",
       "Indíce de qualidade de vida",
       "Quartis de Idade",
-      "Genêro",
+      "Gênero",
       "Teve/tem diabetes?",
       "Teve/tem hipertensão?",
       "Teve/tem atrilação fibrial?",
@@ -111,7 +111,7 @@ function App() {
       <h1>Formulário de Predição</h1>
       <form onSubmit={handleSubmit} className="form-container">
         {Object.keys(formData).map((key) => {
-          if (key === "Genêro") {
+          if (key === "Gênero") {
             return (
               <div key={key} className="form-group">
                 <label htmlFor={key}>{key}:</label>
